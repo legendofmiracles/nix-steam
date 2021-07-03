@@ -23,4 +23,6 @@ in {
   Brawlhalla = import ./brawlhalla normalList;
   EiyuSenkiGold = import ./eiyuSenkiGold normalList;
   ConanExiles = import ./conanExiles normalList;
+  DOOMEternal = import ./doomEternal normalList;
+  HouseParty = import ./houseParty normalList;
 }
