@@ -22,9 +22,10 @@ in makeSteamGame {
 
   gameFiles = [
     (gameFiles "1238861" "4547472450138206145")
+    (gameFiles "1238862" "659005961172239637")
   ];
 
-  proton = proton.proton_6_3_ge;
+  proton = proton.proton_6_3;
 
   drvPath = ./wrapper.nix;
 }

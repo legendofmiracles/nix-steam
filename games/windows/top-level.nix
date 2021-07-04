@@ -25,4 +25,5 @@ in {
   ConanExiles = import ./conanExiles normalList;
   HouseParty = import ./houseParty normalList;
   Offworld = import ./offworld normalList;
+  Battlefield4 = import ./battlefield-4 normalList;
 }

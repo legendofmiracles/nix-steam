@@ -8,6 +8,7 @@ writeScriptBin game.name ''
   }
 
   ${steam-run}/bin/steam-run ${writeScript "fix-${game.name}" ''
+    set -x
     cd $HOME/games/${game.name}
     export WINEDLLOVERRIDES="dxgi=n"
     export DXVK_HUD=1
@@ -15,6 +16,6 @@ writeScriptBin game.name ''
     export STEAM_COMPAT_DATA_PATH=$PROTON_PREFIX_HOME
     export STEAM_COMPAT_CLIENT_INSTALL_PATH=$HOME/.steam/steam
 
-    $PROTON_HOME/proton waitforexitandrun ./Ting.exe
+    $PROTON_HOME/proton waitforexitandrun 'link2ea://launchgame/1238860?platform=steam&theme=bf4'
   ''}
 ''
